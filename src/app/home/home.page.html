@@ -4,6 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menú de Restaurante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    #container p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #8c8c8c;
+      margin: 0;
+    }
+
+    #container a {
+      text-decoration: none;
+    }
+
+    .list-formulario {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .list-formulario ion-item {
+      margin-bottom: 10px;
+    }
+
+    .list-formulario ion-input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .list-formulario ion-button {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <ion-header [translucent]="true">
@@ -49,6 +101,8 @@
         <ion-icon name="add-circle-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
-  </ion-content>
-</body>
-</html>
+
+    <ion-button expand="full" color="primary">Enviar</ion-button>
+    <ion-button expand="full" color="danger">Limpiar</ion-button>
+    <ion-button expand="full" color="success">Añadir platos de comida</ion-button>
+  </ion> 
